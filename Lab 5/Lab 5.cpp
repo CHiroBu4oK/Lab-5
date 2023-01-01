@@ -26,7 +26,7 @@ int main()
     cout << "Min: " << min << endl << "Cord X: " << cordX + 1 << endl;
     for (int y = 0; y < 10; y++) 
     {
-        int *cum, *p, *p1,a[1][10]={1,1,1,1,1,1,1,1,1,1};
+        int *cum, *p, *p1;
         cum = &i[0][y];
         p = &i[cordX][y];
         p1 = &a[1][y];
