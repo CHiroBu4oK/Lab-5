@@ -7,7 +7,7 @@ using namespace std;
 int main() 
 {
     srand(time(NULL));
-    int i[10][10], a[1][10] = { 1,1,1,1,1,1,1,1,1,1 }, min, cordX;
+    int i[10][10], a, min, cordX;
 
     for (int x = 0; x < 10; x++) {
         for (int y = 0; y < 10; y++) {
@@ -29,7 +29,7 @@ int main()
         int *cum, *p, *p1;
         cum = &i[0][y];
         p = &i[cordX][y];
-        p1 = &a[1][y];
+        p1 = &a;
 
         *p1 = *cum;
         *cum = *p;
