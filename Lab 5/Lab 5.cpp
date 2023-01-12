@@ -9,7 +9,7 @@ int main()
 
     for (int x = 0; x < 10; x++) {
         for (int y = 0; y < 10; y++) {
-            i[x][y] = rand() % 100;
+            i[x][y] = rand() % 50;
             cout << i[x][y] << " ";
             if (x == 0 && y == 0) {
                 min = i[0][0];
@@ -25,7 +25,7 @@ int main()
     for (int y = 0; y < 10; y++) 
     {
         int *cum, *p, *p1;
-        cum = &i[0][y];
+        cum = &i[9][y];
         p = &i[cordX][y];
         p1 = &a;
 
